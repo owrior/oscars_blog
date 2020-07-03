@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on Oscar&#39;s Datascience Blog</title>
+    <link>/tags/r/</link>
+    <description>Recent content in R on Oscar&#39;s Datascience Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Principle Component Analysis (PCA) with R</title>
+      <link>/2020/07/02/principle-component-analysis-pca-with-r/</link>
+      <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/07/02/principle-component-analysis-pca-with-r/</guid>
+      <description>AbstractPCA is a statistical technique used in many different settings. Often it is used in data analytics to reduce thedimensions of a variable set. This is done through the linear combination of the raw variables to produce aset of components the aim of which to capture the maximum amount of variance with the minimum number of components.
+\[PC_{1} = w_{1}x_{1} + w_{2}x_{2} + ... + w_{n}x_{n}\]\[PC_{2} = w_{n + 1}x_{n + 1} + w_{n + 2}x_{n + 2} + .</description>
+    </item>
+    
+  </channel>
+</rss>
