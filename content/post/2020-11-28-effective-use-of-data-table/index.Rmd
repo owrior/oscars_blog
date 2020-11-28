@@ -1,0 +1,64 @@
+---
+title: Effective Use of "data.table"
+author: Oscar Riordan
+date: '2020-11-28'
+slug: effective-use-of-data-table
+categories:
+  - guide
+  - package
+  - data.table
+tags: []
+---
+
+# Introduction
+
+data.table is a complex but rewarding package to use. It is by far the most
+efficient out there for data processing and manipulation. However it can be 
+tricky to get to grips with integrating it in to work flows, especially with 
+many packages being built to fit with tidyverse and offering examples using
+that collective of packages.
+
+It's efficient style and operation are worth the extra time to learn how to use 
+it in a readable and effective way. With that being said there are certain 
+things I wish I had known when starting and that I hope may be helpful to 
+others.
+
+# The Basics
+
+```{r}
+library(data.table)
+library(magrittr)
+
+dt <- setDT(copy(mtcars))
+```
+
+## The most important operator
+
+Firstly I think it is necessary to understand the assignment operator. This can
+be used thusly:
+```{r}
+
+dt[, hp_to_wt := hp / wt]
+
+head(dt)
+```
+
+```{r}
+dt[hp_to_wt < 40, hp_to_wt := 20]
+
+head(dt)
+```
+
+It is the assignment operator and it is the most efficient  
+
+## When and when not to use vectors
+
+The rules for when vectors can and can't be used to select and manipulate data
+is a little opaque. It can seem at first that lists (including the shothand 
+version offered by data.table: ".()") and vectors are interchangable except when
+they are not.
+
+
+
+
+
